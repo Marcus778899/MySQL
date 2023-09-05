@@ -1,10 +1,11 @@
 import pymysql
+from SQLAlchemy.acount import uesrname, password, host, port
 
 # 資料庫連線
 connection = pymysql.connect(
-    host="localhost",
-    user="root",
-    password="1234",
+    host=host,
+    user=uesrname,
+    password=password,
     database="ig_app",
     charset="utf8mb4",
     cursorclass=pymysql.cursors.DictCursor,
@@ -14,7 +15,7 @@ connection = pymysql.connect(
 cursor = connection.cursor()
 
 try:
-    sql = "select * from `photos`"
+    sql = "select * from `photos` limit 10"
     cursor.execute(sql)
 
     if cursor.rowcount > 0:
