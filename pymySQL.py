@@ -1,10 +1,10 @@
 import pymysql
-from SQLAlchemy.acount import uesrname, password, host, port
+from SQLAlchemy.mysqlinfo.acount import username, password, host
 
 # 資料庫連線
 connection = pymysql.connect(
     host=host,
-    user=uesrname,
+    user=username,
     password=password,
     database="ig_app",
     charset="utf8mb4",

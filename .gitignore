@@ -1,2 +1,7 @@
-acount.py
+mysqlinfo
 __pycache__
+mysqlinfo.py
+*.csv
+*.xlsx
+*.pptx
+TNL Data Analyst_test2_Python_Instruction.ipynb

@@ -1,8 +1,10 @@
 from main import create_session, Test
 from datetime import datetime
+
+
 data_obj = {
-    'id': 9527,
-    'name': 'Тестовая сессия',
+    'id': 9068,
+    'name': 'Marcus Lin',
     'time': datetime.now().strftime('%Y-%m-%d')
 }
 session = create_session()
